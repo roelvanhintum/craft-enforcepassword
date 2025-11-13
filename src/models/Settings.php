@@ -1,6 +1,6 @@
 <?php
 
-namespace born05\enforcepassword\models;
+namespace roelvanhintum\enforcepassword\models;
 
 use craft\base\Model;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace born05\enforcepassword\services;
+namespace roelvanhintum\enforcepassword\services;
 
-use born05\enforcepassword\Plugin as EnforcePassword;
+use roelvanhintum\enforcepassword\Plugin as EnforcePassword;
 
 use Craft;
 use craft\base\Component;
@@ -22,10 +22,10 @@ class Security extends Component
         $settings = EnforcePassword::$plugin->getSettings();
 
         if (mb_strlen($password) < $settings->passwordMinLength) {
-            $user->addError('newPassword', Craft::t('enforce-password', "Password should be at least {length} characters.", [ 'length' => $settings->passwordMinLength ]));
+            $user->addError('newPassword', Craft::t('enforce-password', "Password should be at least {length} characters.", ['length' => $settings->passwordMinLength]));
         }
         if (mb_strlen($password) > $settings->passwordMaxLength) {
-            $user->addError('newPassword', Craft::t('enforce-password', "Password should be less than {length} characters.", [ 'length' => $settings->passwordMaxLength ]));
+            $user->addError('newPassword', Craft::t('enforce-password', "Password should be less than {length} characters.", ['length' => $settings->passwordMaxLength]));
         }
         if ($settings->enforceUppercase && preg_match('/[A-Z]/', $password) !== 1) {
             $user->addError('newPassword', Craft::t('enforce-password', "Password should contain at least 1 uppercase character."));

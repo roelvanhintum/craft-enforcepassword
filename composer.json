@@ -1,5 +1,5 @@
 {
-    "name": "born05/craft-enforcepassword",
+    "name": "roelvanhintum/craft-enforcepassword",
     "description": "Incrementally enforced new and secure passwords.",
     "type": "craft-plugin",
     "keywords": [
@@ -11,11 +11,15 @@
         "password history"
     ],
     "support": {
-        "docs": "https://github.com/born05/craft-enforcepassword/blob/master/README.md",
-        "issues": "https://github.com/born05/craft-enforcepassword/issues"
+        "docs": "https://github.com/roelvanhintum/craft-enforcepassword/blob/master/README.md",
+        "issues": "https://github.com/roelvanhintum/craft-enforcepassword/issues"
     },
     "license": "MIT",
     "authors": [
+        {
+            "name": "Roel van Hintum",
+            "homepage": "https://roel.vanhintum.eu/"
+        },
         {
             "name": "Born05",
             "homepage": "https://www.born05.com/"
@@ -25,9 +29,13 @@
         "php": "^8.0.2",
         "craftcms/cms": "^4.0.0-alpha|^5.0.0-beta.1"
     },
+    "require-dev": {
+        "craftcms/phpstan": "dev-main",
+        "squizlabs/php_codesniffer": "3.*"
+    },
     "autoload": {
         "psr-4": {
-          "born05\\enforcepassword\\": "src/"
+            "roelvanhintum\\enforcepassword\\": "src/"
         }
     },
     "extra": {
@@ -35,7 +43,7 @@
         "handle": "enforce-password",
         "hasCpSettings": false,
         "hasCpSection": false,
-        "changelogUrl": "https://raw.githubusercontent.com/born05/craft-enforcepassword/master/CHANGELOG.md"
+        "changelogUrl": "https://raw.githubusercontent.com/roelvanhintum/craft-enforcepassword/master/CHANGELOG.md"
     },
     "config": {
         "allow-plugins": {

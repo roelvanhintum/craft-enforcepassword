@@ -1,6 +1,6 @@
 <?php
 
-namespace born05\enforcepassword\records;
+namespace roelvanhintum\enforcepassword\records;
 
 use craft\db\ActiveRecord;
 

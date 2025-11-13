@@ -1,8 +1,8 @@
 <?php
 
-namespace born05\enforcepassword\jobs;
+namespace roelvanhintum\enforcepassword\jobs;
 
-use born05\enforcepassword\Plugin as EnforcePassword;
+use roelvanhintum\enforcepassword\Plugin as EnforcePassword;
 
 use Craft;
 use craft\elements\User;
@@ -30,7 +30,9 @@ class RequirePasswordReset extends BaseJob
         // Loop through users with old passwords.
         $users = User::find()
             ->where([
-                '<', 'lastPasswordChangeDate', Db::prepareValueForDb($maxLifetime)
+                '<',
+                'lastPasswordChangeDate',
+                Db::prepareValueForDb($maxLifetime)
             ])
             ->andWhere(['passwordResetRequired' => false])
             ->status(null)

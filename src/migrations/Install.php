@@ -1,8 +1,8 @@
 <?php
 
-namespace born05\enforcepassword\migrations;
+namespace roelvanhintum\enforcepassword\migrations;
 
-use born05\enforcepassword\records\Password as PasswordRecord;
+use roelvanhintum\enforcepassword\records\Password as PasswordRecord;
 
 use craft\db\Migration;
 use craft\elements\User;

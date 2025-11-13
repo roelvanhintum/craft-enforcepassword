@@ -1,10 +1,10 @@
 <?php
 
-namespace born05\enforcepassword;
+namespace roelvanhintum\enforcepassword;
 
-use born05\enforcepassword\models\Settings;
-use born05\enforcepassword\services\History;
-use born05\enforcepassword\services\Security;
+use roelvanhintum\enforcepassword\models\Settings;
+use roelvanhintum\enforcepassword\services\History;
+use roelvanhintum\enforcepassword\services\Security;
 
 use Craft;
 use craft\base\Plugin as CraftPlugin;

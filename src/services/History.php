@@ -1,10 +1,10 @@
 <?php
 
-namespace born05\enforcepassword\services;
+namespace roelvanhintum\enforcepassword\services;
 
-use born05\enforcepassword\Plugin as EnforcePassword;
-use born05\enforcepassword\jobs\RequirePasswordReset;
-use born05\enforcepassword\records\Password as PasswordRecord;
+use roelvanhintum\enforcepassword\Plugin as EnforcePassword;
+use roelvanhintum\enforcepassword\jobs\RequirePasswordReset;
+use roelvanhintum\enforcepassword\records\Password as PasswordRecord;
 
 use Craft;
 use craft\base\Component;
